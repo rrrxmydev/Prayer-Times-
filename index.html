@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Prayer times</title>
+</head>
+<body>
+<span id="bgContainer" >
+ <img src="SaudiArabia.jpg" alt="Background" id="background">
+</span>
+<nav>
+ <div id="logo">
+  <img src="PngItem_404049.png" alt="myPrayerLogo" width="35rem">
+  <span style="font-size:20px;">MyPrayer</span>
+ </div>
+ <ul>
+  <a href="index.html"><li style="transform: translate(5rem,-0.3rem);">الرئيسية</li></a>
+  <a href="#" onclick="soon()"><li style="transform: translate(15rem,-0.3rem); padding: 5px 20px;">دعاء</li></a>
+  <a href="https://www.instagram.com/_rrrxmy/"><li style="transform: translate(25rem,-0.3rem);">تواصل معنا</li></a>
+ </ul>
+ <select name="Choose" onchange="CountrySelector(this)">
+   <option value="Elmadinah">اختر البلد</option>
+   <option value="Algeria" onclick="getNumber(0)">الجزائر</option>
+   <option value="Morocco" onclick="getNumber(1)">المغرب</option>
+   <option value="Tunisia" onclick="getNumber(2)">تونس</option>
+   <option value="Jordan" onclick="getNumber(3)">الاردن</option>
+   <option value="Egypt" onclick="getNumber(4)">مصر</option>
+   <option value="SaudiArabia" onclick="getNumber(5)">السعودية</option>
+   <option value="Turky" onclick="getNumber(6)">تركيا</option>
+</select>
+</nav>
+ <br>
+<div id="prayers">
+ 
+ <div class="PrayerContainer"></div> 
+ <div class="PrayerContainer"></div> 
+ <div class="PrayerContainer"></div> 
+ <div class="PrayerContainer"></div> 
+ <div class="PrayerContainer"></div>
+ <br>
+</div>
+
+<div id="Date">
+   <span id="country"></span>
+   <span id="miladiDate"></span> <br>
+   <span id="hijriDate"></span>
+</div>
+<div id="DuaaContainer"></div>
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

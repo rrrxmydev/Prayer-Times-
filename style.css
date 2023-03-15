@@ -1,0 +1,152 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Changa', sans-serif;
+}
+
+html{
+scrollbar-width: normal;
+}
+
+html::-webkit-scrollbar{
+ width: 13px;
+}
+html::-webkit-scrollbar-thumb{
+ background-color: #0faa8b;
+}
+html::-webkit-scrollbar-track{
+ background-color: rgba(213, 213, 213, 0.323);
+}
+
+a{
+ text-decoration: none;
+ color: inherit;
+}
+body{
+ background-color: black;
+ overflow-x:hidden;
+}
+nav{
+ width: 100vw;
+ height: 8vh;
+ background-color: #0faa8b;
+}
+ul{
+ width: 50rem;
+ color: white;
+ transform: translate(19rem,-1.8rem);
+}
+li{
+ direction: rtl;
+ display: inline-block;
+ border-radius: 20px;
+ transition: background 0.5s ease-in-out;
+ padding: 5px 10px;
+}
+
+li:hover{
+ background-color: rgba(0, 0, 0, 0.452);
+ background-size: 50px;
+}
+
+select{
+ transform: translate(70rem,-4.2rem);
+ background-color: #0faa8b;
+ outline: none;
+ border: none;
+ cursor: pointer;
+ color:white;
+ font-size: 15px;
+}
+
+#logo{
+ /* background-color: green; */
+ width: 10rem;
+ transform: translate(3rem,0.5rem);
+ cursor: pointer;
+}
+
+#background{
+ width: 100vw;
+ position:fixed;
+ opacity: 0.5;
+ z-index: -2;
+ transition: all 0.5s ease-in-out;
+}
+
+#prayers{
+ background-color: #212121e6;
+ width: 20rem;
+ /* height: 50rem; */
+ transform: translate(-5rem); 
+ float: right;
+ display: relative;
+ border-radius: 10px;
+}
+
+.PrayerContainer{
+ 
+ width: 60%;
+ height: 6rem;
+ border-radius: 10px;
+ background-color: #FFF8F3;
+ transform: translate(4vw);
+ margin: 3rem 0rem 0rem 0rem;
+ text-align: center;
+ transition: all 0.3s;
+ cursor: pointer;
+}
+.PrayerContainer:hover{
+ width: 70%;
+}
+.Title{
+ font-size: 27px;
+ font-weight: 600;
+}
+.PrayTime{
+ font-size: 17px;
+ font-weight: 400;
+}
+ion-icon{
+ transform: translateY(0.45vh);
+}
+#city{
+ font-size: 70px;
+ color:white;
+ margin-left: 40rem;
+ transition: all 1.5s ease-in-out;
+}
+#LocationLogo{
+ transition: all 0.4s ease-in-out;
+}
+#miladiDate{
+ font-size: 30px;
+ color:white;
+ margin-left: 35rem;
+}
+#hijriDate{
+ font-size: 30px;
+ color:white;
+ margin-left: 25rem;
+}
+#city:hover #LocationLogo{
+ transform: translateY(-2vh);
+}
+
+#DuaaTitle{
+ color: white;
+ font-size:40px;
+ margin-left: 40rem;
+
+}
+#DuaaContainer{
+ position: absolute;
+ width: 800px;
+ transform: translate(5rem,5rem);
+}
+
+#Duaa{
+ color: white;
+ font-size: 20px;
+ margin-left: 10rem;
+}
